@@ -1,4 +1,4 @@
-/*Copyright © 2023 MuBai. All rights reserved.*/
+/*Copyright © 2024 MuBai. All rights reserved.*/
 main
 {
 background-color: #e2e1e4;
@@ -8,59 +8,69 @@ t1
 color: #3896ee;
 font-size: 50px; 
 }
-.top
+ul
 {
-    height: auto;
-    width: 100%;
-    margin-left: 0;
-    background-color: #3896ee;
-    position: fixed;/*固定在顶部*/
-    top: 0;/*离顶部的距离为0*/
-    margin-bottom: 5px;
-}
-.top ul
-{
-    width: auto;
-    list-style-type:none ;
-    white-space: nowrap;
-    overflow: hidden;
-    margin-left: 5%;
-    /*margin-top: 0;*/
+    list-style-type: none;
+    margin: 0;
     padding: 0;
-}
-.top li
-{
-    float: left;
-    margin-right: 2%;
-    position: relative;
     overflow: hidden;
+    background-color: #3896ee;
 }
-.top li a
+/*
+a
+{
+    display: block;
+    width: 60px;
+}
+*/
+li
+{
+    display: inline;
+    float: left;
+}
+li a
 {
     display: block;
     color: #ffffff;
     text-align: center;
-    padding: 3px;
-    overflow: hidden;
+    padding: 14px 16px;
     text-decoration: none;
 }
-.top li a:hover
+li a:hover
 {
-    background-color: #3896ee;
+    background-color: #91d7ff;
 }
-.top ul li ul
+/*TODO图片头像预设
+.round_icon
 {
-    margin-left: -0.2px;
-    background-color: #3896ee;
-    position: relative;
-    display: none;
+    width: 34px;
+    height: 34px;
+    display: flex;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
 }
-.top ul li ul li
+*/
+/* 除了最后一个选项(last-child) 其他的都添加分割线
+边框[一般不用]
+li
 {
-    float: none;
-    text-align: center;
+    border-right: 1px solid #bbb;
 }
-.top ul il:hover ul
+li:last-child
 {
-    display: block;
+    border-right: none;
+}
+*/
+/*导航栏固定*/
+ul {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+pre
+{
+    color: #24c5ff;
+    font-size: 20px;
 }
